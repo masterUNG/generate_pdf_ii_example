@@ -41,7 +41,7 @@ class PdfApi {
 
     final imageSvg = await rootBundle.loadString('assets/fruit.svg');
     final imageJpg =
-        (await rootBundle.load('assets/person.jpg')).buffer.asUint8List();
+        (await rootBundle.load('assets/approve.png')).buffer.asUint8List();
 
     final pageTheme = PageTheme(
       pageFormat: PdfPageFormat.a4,
@@ -65,8 +65,8 @@ class PdfApi {
             height: pageTheme.pageFormat.availableHeight - 1,
             child: Center(
               child: Text(
-                'Foreground Text',
-                style: TextStyle(color: PdfColors.white, fontSize: 48),
+                'Master UNG',
+                style: TextStyle(color: PdfColors.black, fontSize: 48),
               ),
             ),
           ),
